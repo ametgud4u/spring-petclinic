@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello to Deepa') {
+        stage('SCM') {
             steps {
-                sh'echo hello Deepa'
+                sh 'cd /tmp'
+                sh 'git clone https://github.com/ametgud4u/game-of-life.git'
             }
         }
 
