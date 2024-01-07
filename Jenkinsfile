@@ -13,5 +13,11 @@ pipeline {
                 sh 'echo hello Neha'
             }
         }
+
+        stage('Hello kedar') {
+            steps {
+                sh 'echo hello kedar'
+            }
+        }
     }
 }
